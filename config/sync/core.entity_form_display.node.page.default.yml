@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_faq
     - node.type.page
   module:
+    - faqfield
     - path
     - text
 _core:
@@ -31,6 +33,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_faq:
+    weight: 121
+    settings:
+      answer_widget: text_format
+      question_title: Question
+      answer_title: Answer
+      question_field_required: false
+      answer_field_required: false
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 3
+    third_party_settings: {  }
+    type: faqfield_default
+    region: content
   path:
     type: path
     weight: 30

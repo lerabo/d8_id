@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_faq
     - node.type.page
   module:
+    - faqfield
     - text
     - user
 _core:
@@ -22,6 +24,20 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_faq:
+    weight: 102
+    label: above
+    settings:
+      active: 0
+      heightStyle: auto
+      collapsible: false
+      event: click
+      animate:
+        easing: linear
+        duration: 200
+    third_party_settings: {  }
+    type: faqfield_accordion
+    region: content
   links:
     weight: 101
     region: content

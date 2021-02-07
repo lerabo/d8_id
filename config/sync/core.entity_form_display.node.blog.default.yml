@@ -5,11 +5,19 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_address
+    - field.field.node.blog.field_body
+    - field.field.node.blog.field_car
+    - field.field.node.blog.field_categories
     - field.field.node.blog.field_comments
     - field.field.node.blog.field_data
     - field.field.node.blog.field_img
+    - field.field.node.blog.field_make
+    - field.field.node.blog.field_mileage
     - field.field.node.blog.field_misto
+    - field.field.node.blog.field_model
+    - field.field.node.blog.field_price
     - field.field.node.blog.field_priority
+    - field.field.node.blog.field_year
     - image.style.thumbnail
     - node.type.blog
   module:
@@ -45,6 +53,32 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_body:
+    weight: 133
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_car:
+    weight: 136
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_categories:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_comments:
     weight: 123
     settings: {  }
@@ -65,6 +99,18 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_make:
+    weight: 130
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mileage:
+    weight: 134
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_misto:
     weight: 127
     settings:
@@ -73,8 +119,26 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
+  field_model:
+    weight: 131
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_price:
+    weight: 132
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_priority:
     weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_year:
+    weight: 135
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -2,10 +2,7 @@ uuid: 8d9c9e14-018d-4662-a423-d7e65246267e
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:ab7e09ff-ae8d-40ec-b01c-099e644f2a40'
   module:
-    - block_content
     - system
   theme:
     - bartik

@@ -6,11 +6,19 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_address
+    - field.field.node.blog.field_body
+    - field.field.node.blog.field_car
+    - field.field.node.blog.field_categories
     - field.field.node.blog.field_comments
     - field.field.node.blog.field_data
     - field.field.node.blog.field_img
+    - field.field.node.blog.field_make
+    - field.field.node.blog.field_mileage
     - field.field.node.blog.field_misto
+    - field.field.node.blog.field_model
+    - field.field.node.blog.field_price
     - field.field.node.blog.field_priority
+    - field.field.node.blog.field_year
     - node.type.blog
   module:
     - text
@@ -35,8 +43,16 @@ content:
     region: content
 hidden:
   field_address: true
+  field_body: true
+  field_car: true
+  field_categories: true
   field_comments: true
   field_data: true
   field_img: true
+  field_make: true
+  field_mileage: true
   field_misto: true
+  field_model: true
+  field_price: true
   field_priority: true
+  field_year: true

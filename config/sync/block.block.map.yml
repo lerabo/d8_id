@@ -2,10 +2,7 @@ uuid: 63a251e8-4337-462e-b35b-f5b830f32102
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:edfae8e1-b323-4147-aaac-01c4fb32148c'
   module:
-    - block_content
     - node
     - system
     - user
