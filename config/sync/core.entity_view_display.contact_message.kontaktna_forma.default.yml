@@ -1,0 +1,37 @@
+uuid: d072c95f-52e1-45eb-bde2-bb5625ab8555
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.kontaktna_forma
+    - field.field.contact_message.kontaktna_forma.field_e_mail
+    - field.field.contact_message.kontaktna_forma.field_name
+  module:
+    - text
+id: contact_message.kontaktna_forma.default
+targetEntityType: contact_message
+bundle: kontaktna_forma
+mode: default
+content:
+  field_e_mail:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_name:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

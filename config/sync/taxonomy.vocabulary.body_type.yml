@@ -1,0 +1,8 @@
+uuid: 957edc2c-5a03-440e-a45f-77a8adaf843d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Body type'
+vid: body_type
+description: ''
+weight: 0

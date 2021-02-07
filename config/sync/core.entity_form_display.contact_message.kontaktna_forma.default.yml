@@ -1,0 +1,68 @@
+uuid: b15b5a3c-0289-49bf-9b91-84ca29c581d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.kontaktna_forma
+    - field.field.contact_message.kontaktna_forma.field_e_mail
+    - field.field.contact_message.kontaktna_forma.field_name
+  module:
+    - text
+id: contact_message.kontaktna_forma.default
+targetEntityType: contact_message
+bundle: kontaktna_forma
+mode: default
+content:
+  copy:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_e_mail:
+    weight: 51
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_name:
+    weight: 52
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  mail:
+    weight: -40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 0
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: -50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

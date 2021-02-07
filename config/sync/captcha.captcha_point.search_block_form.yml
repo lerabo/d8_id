@@ -1,0 +1,7 @@
+uuid: 69dc5529-7395-4d91-bdfc-8ea33e594c0d
+langcode: en
+status: true
+dependencies: {  }
+formId: search_block_form
+captchaType: default
+label: search_block_form

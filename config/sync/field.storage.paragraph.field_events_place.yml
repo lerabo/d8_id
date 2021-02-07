@@ -1,0 +1,20 @@
+uuid: 9e8a35ba-415b-429f-be66-8a2dd0a7eeb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_events_place
+field_name: field_events_place
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

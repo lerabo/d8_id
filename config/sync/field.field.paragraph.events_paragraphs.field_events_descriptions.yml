@@ -1,0 +1,21 @@
+uuid: d0bf1073-84d1-436a-a0cf-b6b106a8de18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_events_descriptions
+    - paragraphs.paragraphs_type.events_paragraphs
+  module:
+    - text
+id: paragraph.events_paragraphs.field_events_descriptions
+field_name: field_events_descriptions
+entity_type: paragraph
+bundle: events_paragraphs
+label: 'Events Descriptions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

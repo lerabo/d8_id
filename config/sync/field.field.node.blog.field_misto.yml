@@ -1,0 +1,21 @@
+uuid: 633f7911-c306-420b-89f0-48b70e4bc1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_misto
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_misto
+field_name: field_misto
+entity_type: node
+bundle: blog
+label: Місто
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

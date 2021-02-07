@@ -1,0 +1,27 @@
+uuid: fafe74ba-76e4-42e1-b7e2-e717175c41f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_address
+field_name: field_address
+entity_type: node
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: !!float 0
+      label: Україна
+    -
+      value: !!float 1
+      label: країна
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

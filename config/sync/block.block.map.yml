@@ -1,0 +1,50 @@
+uuid: 63a251e8-4337-462e-b35b-f5b830f32102
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:edfae8e1-b323-4147-aaac-01c4fb32148c'
+  module:
+    - block_content
+    - node
+    - system
+    - user
+  theme:
+    - bartik
+id: map
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:edfae8e1-b323-4147-aaac-01c4fb32148c'
+settings:
+  id: 'block_content:edfae8e1-b323-4147-aaac-01c4fb32148c'
+  label: Map
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      blog: blog
+      cars: cars
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /contacts
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

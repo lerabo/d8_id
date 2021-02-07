@@ -1,0 +1,28 @@
+uuid: dc66c540-fb0f-46ac-8d5b-2f7f83e3fba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pathauto.body
+    - node.type.pathauto
+  module:
+    - text
+    - user
+id: node.pathauto.default
+targetEntityType: node
+bundle: pathauto
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

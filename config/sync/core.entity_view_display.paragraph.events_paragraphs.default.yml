@@ -1,0 +1,41 @@
+uuid: 0493ba36-b577-48a2-98ec-b5bece81f16c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_paragraphs.field_event_date
+    - field.field.paragraph.events_paragraphs.field_events_descriptions
+    - field.field.paragraph.events_paragraphs.field_events_place
+    - paragraphs.paragraphs_type.events_paragraphs
+  module:
+    - datetime
+    - text
+id: paragraph.events_paragraphs.default
+targetEntityType: paragraph
+bundle: events_paragraphs
+mode: default
+content:
+  field_event_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_events_descriptions:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_events_place:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

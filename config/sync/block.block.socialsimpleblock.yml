@@ -1,0 +1,35 @@
+uuid: 74ec66f5-4fc5-4928-9faf-52dde8b7e423
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_simple
+    - system
+  theme:
+    - bartik
+id: socialsimpleblock
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: social_simple_block
+settings:
+  id: social_simple_block
+  label: 'Social simple block'
+  provider: social_simple
+  label_display: visible
+  social_networks:
+    twitter: twitter
+    facebook: facebook
+    googleplus: googleplus
+    linkedin: linkedin
+    mail: '0'
+    print: '0'
+    entity_print_pdf: '0'
+  social_share_title: 'Share on'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/about us\r\n/comments\r\n/contacts"
+    negate: false
+    context_mapping: {  }

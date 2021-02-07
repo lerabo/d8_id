@@ -1,0 +1,30 @@
+uuid: c6784bd5-3e52-4bcb-9215-df60c859e753
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pathauto.body
+    - node.type.pathauto
+  module:
+    - text
+    - user
+id: node.pathauto.teaser
+targetEntityType: node
+bundle: pathauto
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 037a2c38-724e-4d89-aea6-a7e87eb2dfe4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto
+label: pathauto
+type: 'canonical_entities:node'
+pattern: 'pathauto/[node:title]'
+selection_criteria:
+  1f78ea8a-cd73-4e68-96d3-2c002926eedd:
+    id: node_type
+    bundles:
+      pathauto: pathauto
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1f78ea8a-cd73-4e68-96d3-2c002926eedd
+selection_logic: and
+weight: -5
+relationships: {  }

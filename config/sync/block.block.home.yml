@@ -1,0 +1,39 @@
+uuid: 4159274f-babf-4574-ac2f-39a6bc4176b5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:252225f2-080f-471d-80e4-db22fda6631c'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bartik
+id: home
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:252225f2-080f-471d-80e4-db22fda6631c'
+settings:
+  id: 'block_content:252225f2-080f-471d-80e4-db22fda6631c'
+  label: Home
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

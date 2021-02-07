@@ -1,0 +1,39 @@
+uuid: 17a82b92-b5bb-4a32-a7d4-1bd0f0a4e9e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block_type:0d4cf6e7-830a-455f-b95f-87f385b201f6'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bartik
+id: customers
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:0d4cf6e7-830a-455f-b95f-87f385b201f6'
+settings:
+  id: 'block_content:0d4cf6e7-830a-455f-b95f-87f385b201f6'
+  label: Customers
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/about us\r\n/comments\r\n/contacts"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

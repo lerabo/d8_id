@@ -1,0 +1,20 @@
+uuid: 2b7b2f90-83d6-46ad-b9fa-bd76ab5284a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_misto
+field_name: field_misto
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 14f18507-71c0-4f37-977a-73ee26559e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.kontaktna_forma
+    - field.storage.contact_message.field_e_mail
+id: contact_message.kontaktna_forma.field_e_mail
+field_name: field_e_mail
+entity_type: contact_message
+bundle: kontaktna_forma
+label: E-mail
+description: 'Write your email, please!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

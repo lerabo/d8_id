@@ -1,0 +1,12 @@
+uuid: a3adc184-cc4e-4242-8c9a-66dfb6feb785
+langcode: en
+status: true
+dependencies: {  }
+id: kontaktna_forma
+label: 'Контактна форма'
+recipients:
+  - webmaster@example.com
+reply: ''
+weight: 0
+message: 'Thanks for your message! '
+redirect: /contacts

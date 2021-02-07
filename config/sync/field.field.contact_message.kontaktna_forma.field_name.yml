@@ -1,0 +1,21 @@
+uuid: ffb67e3b-d336-4f3e-890d-e20bc4b1713a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.kontaktna_forma
+    - field.storage.contact_message.field_name
+  module:
+    - text
+id: contact_message.kontaktna_forma.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: kontaktna_forma
+label: Name
+description: 'Write your name, please!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
