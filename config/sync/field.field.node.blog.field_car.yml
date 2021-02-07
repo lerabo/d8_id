@@ -1,0 +1,51 @@
+uuid: 5a3cc9ad-b1aa-486c-ac36-7aaf856bb308
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_car
+    - node.type.blog
+    - taxonomy.vocabulary.cars
+  content:
+    - 'taxonomy_term:cars:16684e87-2f14-4abe-857f-3291ad782f03'
+    - 'taxonomy_term:cars:543a1230-e85f-4fa7-9ea3-59b718bcb3bb'
+    - 'taxonomy_term:cars:6b3fade0-ad19-4ea9-ba31-c4083da28435'
+    - 'taxonomy_term:cars:7892afc7-92e7-424d-9240-a9a38f59b6c4'
+    - 'taxonomy_term:cars:b6653af2-93b6-47b7-9437-f3fdd516e18f'
+    - 'taxonomy_term:cars:b93152f9-bd33-477f-83f5-dec81febaa36'
+    - 'taxonomy_term:cars:cfe37f08-0baf-44cd-9fb6-5d272f749631'
+id: node.blog.field_car
+field_name: field_car
+entity_type: node
+bundle: blog
+label: 'Car''s model'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b93152f9-bd33-477f-83f5-dec81febaa36
+  -
+    target_uuid: 6b3fade0-ad19-4ea9-ba31-c4083da28435
+  -
+    target_uuid: 7892afc7-92e7-424d-9240-a9a38f59b6c4
+  -
+    target_uuid: cfe37f08-0baf-44cd-9fb6-5d272f749631
+  -
+    target_uuid: b6653af2-93b6-47b7-9437-f3fdd516e18f
+  -
+    target_uuid: 16684e87-2f14-4abe-857f-3291ad782f03
+  -
+    target_uuid: 543a1230-e85f-4fa7-9ea3-59b718bcb3bb
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cars: cars
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

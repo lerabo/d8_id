@@ -1,0 +1,21 @@
+uuid: 13594fd8-4b54-442c-a33d-0354de9f0b62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mileage
+    - node.type.blog
+  module:
+    - options
+id: node.blog.field_mileage
+field_name: field_mileage
+entity_type: node
+bundle: blog
+label: Mileage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

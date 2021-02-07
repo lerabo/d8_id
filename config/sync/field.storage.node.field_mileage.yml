@@ -1,0 +1,51 @@
+uuid: cf514770-573c-4396-a817-fd6fc54c9a1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_mileage
+field_name: field_mileage
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1000
+      label: '1000'
+    -
+      value: 2000
+      label: '2000'
+    -
+      value: 5000
+      label: '5000'
+    -
+      value: 10000
+      label: '10000'
+    -
+      value: 15000
+      label: '15000'
+    -
+      value: 50000
+      label: '50000'
+    -
+      value: 80000
+      label: '80000'
+    -
+      value: 100000
+      label: '100000'
+    -
+      value: 150000
+      label: '150000'
+    -
+      value: 200000
+      label: '200000'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

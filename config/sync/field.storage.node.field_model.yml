@@ -1,0 +1,51 @@
+uuid: 69e98684-25d0-4cd8-b434-da97bf3196d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_model
+field_name: field_model
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Alfa
+      label: Alfa
+    -
+      value: 'Land Rover'
+      label: 'Land Rover'
+    -
+      value: Hyndai
+      label: Hyndai
+    -
+      value: Nissan
+      label: Nissan
+    -
+      value: SLR
+      label: SLR
+    -
+      value: CLK
+      label: CLK
+    -
+      value: McLaren
+      label: McLaren
+    -
+      value: Veneno
+      label: Veneno
+    -
+      value: Diablo
+      label: Diablo
+    -
+      value: Audi
+      label: Audi
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

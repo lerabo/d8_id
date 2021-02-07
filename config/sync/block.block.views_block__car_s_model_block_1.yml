@@ -1,0 +1,24 @@
+uuid: e92890ae-b283-4a4b-b137-cbf61f8ce9bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.car_s_model
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__car_s_model_block_1
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'views_block:car_s_model-block_1'
+settings:
+  id: 'views_block:car_s_model-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
